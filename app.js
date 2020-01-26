@@ -74,7 +74,7 @@ function main(personsData) {
 
   // Setup svg using Bostock's margin convention
 
-  var margin = { top: 20, right: 250, bottom: 120, left: 30 };
+  var margin = { top: 20, right: 250, bottom: 140, left: 30 };
 
   var width = 1800 - margin.left - margin.right,
     height = 800 - margin.top - margin.bottom;
