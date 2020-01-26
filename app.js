@@ -76,7 +76,7 @@ function main(personsData) {
 
   var margin = { top: 20, right: 250, bottom: 120, left: 30 };
 
-  var width = 2000 - margin.left - margin.right,
+  var width = 1800 - margin.left - margin.right,
     height = 800 - margin.top - margin.bottom;
 
   var svg = d3.select("body")
@@ -175,7 +175,7 @@ function main(personsData) {
     //.attr("y", function (d) { console.log(d.y0); })
     .attr("y", function (d) { return y(d.y0 + d.y); })
     .attr("height", function (d) { return y(d.y0) - y(d.y0 + d.y); })
-    .attr("width", x.rangeBand())
+    .attr("width", 20/*x.rangeBand()*/)
     .on("mouseover", function () { tooltip.style("display", null); })
     //.on("mouseout", function () { tooltip.style("display", "none"); })
     .on("mousemove", function (d) {
