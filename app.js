@@ -74,7 +74,7 @@ function main(personsData) {
 
   // Setup svg using Bostock's margin convention
 
-  var margin = { top: 20, right: 160, bottom: 120, left: 30 };
+  var margin = { top: 20, right: 250, bottom: 120, left: 30 };
 
   var width = 2000 - margin.left - margin.right,
     height = 800 - margin.top - margin.bottom;
@@ -201,7 +201,7 @@ function main(personsData) {
     .attr("y", 9)
     .attr("dy", ".35em")
     //.style("text-anchor", "start")
-    .style("writing-mode", "vertical-rl")
+
     .text(function (d, i) {
       switch (i) {
         case 0: return "Mean Score";
